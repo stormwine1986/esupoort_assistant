@@ -40,6 +40,7 @@ def process(question) -> Generator[str,str,str]:
         driver_path="C:\\chromedriver-win64\\chromedriver.exe"
     )
     log = "Submit Question: {}\n".format(question)
+    log += "Try to Login...\n"
     answer = ""
     yield log, answer, ""
     try:
